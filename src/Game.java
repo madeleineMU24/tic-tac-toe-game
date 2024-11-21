@@ -85,7 +85,6 @@ public class Game {
         return false;//om inget är true kan spelet blivit till exempel oavgjort, annars retuneras true och vi får en vinnare
     }
 
-
     private Player changePlayer(){ //metod att spelarna spelar varannan gång i spelet
     if(currentPlayer == players[0]) {
         currentPlayer = players[1];//om currentPlayer är [0] från början, blir den [1]

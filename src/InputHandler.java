@@ -9,7 +9,7 @@ public class InputHandler {
 
     public int[] getMoveFromPlayer() { //metod för att ta in spelarens val
         int choice = -1; //kollar att spelaren gör ett giltigt val(1-9), här skulle man kunna ha ett annat värde
-                        //men om man till exempel har 12 och sen vil ha en större spelbräda så skulle ett av valen man
+                        //men om man till exempel har 12 och sen vill ha en större spelbräda så skulle ett av valen man
                         //vill ha vara upptagen. -1 kommer inte behövas och är därför bra som val
         boolean validInput = false;
 
@@ -46,7 +46,4 @@ public class InputHandler {
             }
         }
         }
-
-
-
 }

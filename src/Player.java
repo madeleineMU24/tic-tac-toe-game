@@ -20,7 +20,6 @@ public class Player {
     public static Player choosePlayer(Player[] players) {
         Random rng = new Random(); //en metod som slumpar vem som startar
         return rng.nextBoolean() ? players[0]: players[1];
-
     }
 }
 
