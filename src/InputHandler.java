@@ -7,8 +7,8 @@ public class InputHandler {
         scanner = new Scanner(System.in);
     }
 
-    public int[] getMoveFromPlayer() { //metod för att ta in splearens val
-        int choice = -1; //kollar att spelaren gör ett giltligt val(1-9), här skulle man kunna ha ett annat värde
+    public int[] getMoveFromPlayer() { //metod för att ta in spelarens val
+        int choice = -1; //kollar att spelaren gör ett giltigt val(1-9), här skulle man kunna ha ett annat värde
                         //men om man till exempel har 12 och sen vil ha en större spelbräda så skulle ett av valen man
                         //vill ha vara upptagen. -1 kommer inte behövas och är därför bra som val
         boolean validInput = false;
@@ -27,8 +27,8 @@ public class InputHandler {
                 scanner.nextLine();//Om du har skrivit någon annat än en siffra och här töms scannern
                 }
             }
-                int row = (choice - 1) / 3; //räknar ut valet till kordinater i raderna
-                int column = (choice - 1) % 3;//räknar ut valet till kordinater i kolumerna
+                int row = (choice - 1) / 3; //räknar ut valet till platserna i raderna
+                int column = (choice - 1) % 3;//räknar ut valet till platserna i kolumnerna
                 return new int[]{row, column};//här skapar en array som skickas tillbaka till mitt rutnät
             }
 
